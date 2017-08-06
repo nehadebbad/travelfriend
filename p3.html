@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+         body
+         {
+         	background: url("http://www.technocrazed.com/wp-content/uploads/2015/12/beautiful-wallpaper-download-14.jpg");
+         }
+	</style>
+	<script type="text/javascript">
+	function x()
+	{
+		var n=document.getElementById("t").value;
+		switch(n)
+		{
+			case "1":document.getElementById("t1").value="nd";
+			break;
+			case "2":document.getElementById("t1").value="ny";
+			break;
+		}
+	}
+	</script>
+</head>
+<body align="center">
+
+	<select id="t" onchange="x()">
+		<option value="1">1.India</option>
+		<option value="2">2.America</option>
+	</select>
+	result:
+	<input type="text" id="t1" value=""></input>
+
+</body>
+</html>

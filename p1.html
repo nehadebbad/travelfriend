@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+	function outer()
+	{
+		out=6;
+		function inner()
+		{
+			inn=7;
+			document.writeln(out);
+			document.writeln(inn);
+		}
+		inner();
+	}
+	outer();
+</script>
+</html>

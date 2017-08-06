@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	function x()
+		{
+			var temp="";
+			var n=document.getElementById("t").value;
+		if(n<0)
+			document.getElementById("t1").value="out of bound";
+		else if(n>999)
+			document.getElementById("t1").value="out of bound";
+		else if(isNaN(n))
+			document.getElementById("t1").value="not a number";
+		else
+		{
+			for(i=0;i<n.length;i++)
+			{
+				var k=n.charAt(i);
+				switch(k)
+				{
+					case "1":temp=temp+"one";
+					document.getElementById("t1").value=temp;
+					break;
+					default:temp=temp+"zero";
+					document.getElementById("t1").value=temp;
+				}
+			}
+		}}
+	</script>
+</head>
+<body>
+<form>
+	input:<input type="text" name="textfield" id="t" onchange="x()"></input>
+	result:<input type="text" name="text1" id="t1"></input>
+</form>
+</body>
+</html>
